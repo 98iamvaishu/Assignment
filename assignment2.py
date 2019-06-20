@@ -4,8 +4,7 @@ import csv
 image_url = []
 num_cashless = []
 anual_income = []
-driver = webdriver.Chrome(
-    executable_path=r'C:/Users/vaishnavi/Downloads/chromedriver_win32/chromedriver.exe')
+driver = webdriver.Chrome(executable_path=r'C:/Users/vaishnavi/Downloads/chromedriver_win32/chromedriver.exe')
 driver.get(
     "https://health.policybazaar.com/quotes?tabel=4&enquiryid=MTQ0MjI1MjM0&profileid=35419148")
 for image in driver.find_elements_by_xpath('//div[@class="quotes-box-inner1"]//img[@src]'):

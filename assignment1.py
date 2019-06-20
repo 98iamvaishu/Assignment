@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 
-driver = webdriver.Chrome()
+driver = webdriver.Chrome(executable_path=r'C:/Users/vaishnavi/Downloads/chromedriver_win32/chromedriver.exe')
 driver.get("https://health.policybazaar.com/")
 name = driver.find_element_by_id("inputname")
 name.send_keys('Suraj Tiwari')
